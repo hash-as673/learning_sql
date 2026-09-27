@@ -7,3 +7,17 @@ FROM customers
 WHERE customers.score > 400
 GROUP BY customers.country
 HAVING SUM(customers.score) > 800;
+
+SELECT * 
+FROM customers
+WHERE customers.country = 'Germany';
+
+SELECT * 
+FROM customers
+WHERE customers.country != 'Germany';
+
+SELECT * 
+FROM customers
+WHERE customers.score > 500;
+
+
